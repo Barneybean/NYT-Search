@@ -1,0 +1,23 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.jumbotron {
+ 
+    background-color: #20315A;
+    color: white;
+}
+
+.jumbo1 {
+    font-size: 5rem;
+}
+
+.form-group {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
