@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="UTF-8">
+ <!-- Bootstrap and jQuery link -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+ <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+ <script src="assets/javascript/nyt.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- header jumbotron with name of the page! -->
+    <div class=" container jumbotron" style="background-color: #20315A ; color: white;">
+        <h1 class="text-center"><strong><i class="fa fa-newspaper-o"></i> New York Times Search</strong></h1>
+    </div>
+
+    <br>
+    <!-- beginning of form container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Search Parameters</div>
+                        <div class="card-body">
+                            <form>
+
+                                <!-- search term text bar -->
+                                <div class="form-group">
+                                    <label for="searchTerm">Search Term:</label>
+                                    <input type="search" class="form-control" id="search">
+                                </div>
+
+                                <!-- select number of articles retrieved -->
+                                <div class="form-group">
+                                    <label for="pwd">Number of records to retrieve:</label>
+                                        <select class="form-control" id="number">
+                                            <option value="1">1</option>
+                                            <option value="5" selected>5</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                </div>
+
+                                <!-- Date to start search articles -->
+                                <div class="form-group">
+                                    <label for="startYear">Start Year (Optional)</label>
+                                    <input type="number" class="form-control" id="start">
+                                </div>
+
+                                <!-- Date to end search articles -->
+                                <div class="form-group">
+                                    <label for="endYear">End Year (Optional)</label>
+                                    <input type="number" class="form-control" id="end">
+                                </div>
+
+                                <!-- submit button and clear button -->
+                                <button type="button" class="btn btn-primary" id="searchBtn">Search</button>
+                                <button type="button" class="btn btn-primary" id="clearBtn">Clear Results</button>
+
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">Search Results</div>
+                        <div class ="card-body">
+                            <div class="well" id="articleShow">
+                                <div class="headline">TEMPORARY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
